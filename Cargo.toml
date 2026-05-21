@@ -1,0 +1,33 @@
+[package]
+name = "zenoh-research"
+version = "0.1.0"
+edition = "2021"
+
+[[example]]
+name = "01_locality_isolation"
+
+[[example]]
+name = "02_qos_profiles"
+
+[[example]]
+name = "03_queryable_rpc"
+
+[[example]]
+name = "04_key_expressions"
+
+[[example]]
+name = "05_liveliness"
+
+[[example]]
+name = "06_multi_publisher"
+
+[[example]]
+name = "07_selective_subscribe"
+
+[[example]]
+name = "08_perf_bench"
+
+[dependencies]
+zenoh = { version = "1.8", features = ["unstable"] }
+tokio = { version = "1", features = ["full"] }
+anyhow = "1"
